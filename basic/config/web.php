@@ -72,11 +72,11 @@ $config = [
     /*=============== add begin ================*/
 	'modules' => [
 		'auth' => [
-			'class' => 'sunnnnn\admin\auth\Module',
+			'class' => 'sunnnnn\nifty\auth\Module',
 		]
 	],
 	'as access' => [
-		'class' => 'sunnnnn\admin\auth\components\AccessControl',
+		'class' => 'sunnnnn\nifty\auth\components\AccessControl',
 		'allowActions' => [
 			'site/login',
 			'site/ajax-login',
