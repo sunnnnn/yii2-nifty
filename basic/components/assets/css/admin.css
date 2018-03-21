@@ -46,3 +46,7 @@
 .profile .widget-body{
 	padding: 60px 15px 15px;
 }
+
+.table > tbody > tr > td{
+	vertical-align: middle;
+}
