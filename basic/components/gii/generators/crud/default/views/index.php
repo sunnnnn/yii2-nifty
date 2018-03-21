@@ -92,7 +92,7 @@ $this->params['breadcrumbs'][] = $this->title;
 									"class" => "btn btn-sm btn-default"
 								]);
 							},
-							"delete" => function($url, $model, $key){
+							"remove" => function($url, $model, $key){
 							    return Html::a('<i class="pli-remove"></i> '.Yii::t('app/view', 'remove'), 'javascript:;', [
 									'class' => 'btn btn-sm btn-default ajax-table-delete',
 								    'data-action' => Url::to(['/<?= Inflector::camel2words(StringHelper::basename($generator->modelClass), false) ?>/delete'])
