@@ -42,7 +42,7 @@ $this->title = Yii::t('app/menu', 'user');
             <div class="pad-all">
                 <div class="media pad-ver">
                     <div class="media-left">
-                        <img alt="Profile Picture" class="img-md img-circle" src="<?= $model->photo; ?>">
+                        <img alt="Profile Picture" class="img-md img-circle" src="<?= empty($model->photo) ? Admin::getProfilePhotos(true) : $model->photo; ?>">
                     </div>
                     <div class="media-body pad-top">
                         <div class="box-inline">

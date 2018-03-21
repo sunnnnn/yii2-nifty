@@ -1,8 +1,8 @@
 <?php
 use yii\helpers\Html;
 use app\models\Admin;
-use sunnnnn\admin\auth\components\helpers\MenuHelper;
-use sunnnnn\admin\auth\components\widgets\Menu;
+use sunnnnn\nifty\auth\components\helpers\MenuHelper;
+use sunnnnn\nifty\auth\components\widgets\Menu;
 ?>
 <nav id="mainnav-container">
     <div id="mainnav">

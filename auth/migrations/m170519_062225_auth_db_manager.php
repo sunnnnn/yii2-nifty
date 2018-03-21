@@ -90,12 +90,12 @@ class m170519_062225_auth_db_manager extends Migration{
         $this->batchInsert('{{%auth_menu}}', 
         	['id', 'name', 'parent', 'route', 'order', 'icon', 'add_time', 'edit_time'], 
         	[
-				[1, '主页', 0, 25, 1, 'pli-home', time(), 0],
-				[2, '权限管理', 0, 0, 1000, 'pli-key', time(), 0],
-				[3, '管理员', 2, 19, 1001, '', time(), 0],
-				[4, '菜单', 2, 14, 1002, '', time(), 0],
-				[5, '角色', 2, 9, 1003, '', time(), 0],
-				[6, '路由', 2, 4, 1004, '', time(), 0],
+        	    [1, 'home', 0, 32, 1, 'pli-home', time(), 0],
+				[2, 'permissions', 0, 0, 1000, 'pli-key', time(), 0],
+				[3, 'administrator', 2, 19, 1001, '', time(), 0],
+				[4, 'menu', 2, 14, 1002, '', time(), 0],
+				[5, 'role', 2, 9, 1003, '', time(), 0],
+				[6, 'route', 2, 4, 1004, '', time(), 0],
         	]
 		);
         
