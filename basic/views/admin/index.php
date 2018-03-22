@@ -26,7 +26,7 @@ $this->title = Yii::t('app/menu', 'administrator');
 	    <?php ActiveForm::end(); ?>
     </div>
     <div class="col-sm-3 toolbar-right">
-        <?= Html::a('<i class="pli-add""></i> '.Yii::t('app/view', 'add'), ['/admin/add'], ['class' => 'btn btn-purple']) ?>
+        <?= Html::a('<i class="pli-add""></i> '.Yii::t('app/view', 'create'), ['/admin/add'], ['class' => 'btn btn-purple']) ?>
     </div>
 </div>
 

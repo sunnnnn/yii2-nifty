@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
 				</div>
                 
                 <div class="col-sm-3 table-toolbar-right">
-                	<?= '<?= ' ?>Html::a('<i class="pli-add""></i> '.Yii::t('app/view', 'add'), ['/<?= Inflector::camel2words(StringHelper::basename($generator->modelClass), false) ?>/add'], ['class' => 'btn btn-purple']) ?>
+                	<?= '<?= ' ?>Html::a('<i class="pli-add""></i> '.Yii::t('app/view', 'create'), ['/<?= Inflector::camel2words(StringHelper::basename($generator->modelClass), false) ?>/add'], ['class' => 'btn btn-purple']) ?>
                 </div>
             </div>
         </div>

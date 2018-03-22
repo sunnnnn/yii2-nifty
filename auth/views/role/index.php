@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
                 
                 <div class="col-sm-3 table-toolbar-right">
-                	<?= Html::a('<i class="pli-add""></i> '.Yii::t('app/view', 'add'), ['/auth/role/add'], ['class' => 'btn btn-purple']) ?>
+                	<?= Html::a('<i class="pli-add""></i> '.Yii::t('app/view', 'create'), ['/auth/role/add'], ['class' => 'btn btn-purple']) ?>
                 </div>
             </div>
         </div>
