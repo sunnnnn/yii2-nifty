@@ -17,8 +17,8 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\ActiveForm;
 
-$this->title = empty($model->id) ? <?= $generator->generateString('add_' . Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?> : <?= $generator->generateString('edit_' . Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>;
-$this->params['breadcrumbs'][] = ['label' => <?= $generator->generateString(Inflector::pluralize(Inflector::camel2words(StringHelper::basename($generator->modelClass)))) ?>, 'url' => ['/<?= Inflector::camel2words(StringHelper::basename($generator->modelClass), false); ?>/index']];
+$this->title = empty($model->id) ? Yii::t('app/view', 'create') : Yii::t('app/view', 'edit');
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app/menu', '<?= Inflector::camel2words(StringHelper::basename($generator->modelClass), false) ?>'), 'url' => ['/<?= Inflector::camel2words(StringHelper::basename($generator->modelClass), false); ?>/index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="panel">

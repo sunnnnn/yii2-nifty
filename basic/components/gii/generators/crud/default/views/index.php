@@ -13,7 +13,7 @@ use yii\helpers\Url;
 use yii\widgets\ActiveForm;
 use yii\grid\GridView;
 
-$this->title = <?= $generator->generateString(Inflector::pluralize(Inflector::camel2words(StringHelper::basename($generator->modelClass)))) ?>;
+$this->title = Yii::t('app/menu', '<?= Inflector::camel2words(StringHelper::basename($generator->modelClass), false) ?>');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="panel">

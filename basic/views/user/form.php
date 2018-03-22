@@ -4,7 +4,7 @@ use yii\helpers\Url;
 use yii\widgets\ActiveForm;
 use app\models\Admin;
 
-$this->title = empty($model->id) ? Yii::t('app/view', 'add_user') : Yii::t('app/view', 'edit_user');
+$this->title = empty($model->id) ? Yii::t('app/view', 'create') : Yii::t('app/view', 'edit');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app/menu', 'user'), 'url' => Url::to(['/user/index'])];
 $this->params['breadcrumbs'][] = $this->title;
 

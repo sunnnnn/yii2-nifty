@@ -5,7 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use app\models\Admin;
 
-$this->title = empty($model->id) ? Yii::t('app/view', 'add_admin') : Yii::t('app/view', 'edit_admin');
+$this->title = empty($model->id) ? Yii::t('app/view', 'create') : Yii::t('app/view', 'edit');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app/menu', 'admin'), 'url' => Url::to(['/admin/index'])];
 $this->params['breadcrumbs'][] = $this->title;
 

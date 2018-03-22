@@ -7,7 +7,7 @@ use components\assets\SelectAsset;
 SelectAsset::register($this);
 $this->registerJs("$('.select2').select2();", yii\web\View::POS_END);
 
-$this->title = empty($model->id) ? Yii::t('app/view', 'add_menu') : Yii::t('app/view', 'edit_menu');
+$this->title = empty($model->id) ? Yii::t('app/view', 'create') : Yii::t('app/view', 'edit');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app/menu', 'menu'), 'url' => Url::to(['/auth/menu/index'])];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

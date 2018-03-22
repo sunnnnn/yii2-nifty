@@ -6,7 +6,7 @@ use yii\widgets\ActiveForm;
 
 $this->registerJs($this->render('role.js'), yii\web\View::POS_END);
 
-$this->title = empty($model->id) ? Yii::t('app/view', 'add_role') : Yii::t('app/view', 'edit_role');
+$this->title = empty($model->id) ? Yii::t('app/view', 'create') : Yii::t('app/view', 'edit');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app/menu', 'role'), 'url' => Url::to(['/auth/role/index'])];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

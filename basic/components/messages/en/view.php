@@ -18,27 +18,16 @@ return [
     'confirm_delete' => 'Remove',
     'confirm_cancel' => 'Cancel',
      
-    
-    //route
-    'add_route' => 'Add Route',
-    'edit_route' => 'Edit Route',
-    
     //role
-    'add_role' => 'Add Role',
-    'edit_role' => 'Edit Role',
     'role_unassigned_permissions' => 'Unassigned Permissions',
     'role_assigned_permissions' => 'Assigned Permissions',
     'role_assign' => 'Assign&nbsp;&nbsp;&nbsp;',
     'role_remove' => 'Remove',
     
     //menu
-    'add_menu' => 'Add Menu',
-    'edit_menu' => 'Edit Menu',
     'top_menu' => 'Top Menu',
     
     //admin
-    'add_admin' => 'Add Administrator',
-    'edit_admin' => 'Edit Administrator',
     'all_roles' => 'All roles',
     'edit_password_placeholder' => 'Do not input the password without changing it',
     
@@ -48,6 +37,4 @@ return [
     'phone_number' => 'Phone Number',
     'email'     => 'Email Address',
     'address'   => 'Address',
-    'add_user'  => 'Add User',
-    'edit_user' => 'Edit User',
 ];
