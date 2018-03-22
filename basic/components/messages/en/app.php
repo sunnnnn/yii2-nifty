@@ -16,6 +16,7 @@ return [
     'profile' => 'Profile',
     'not_set' => 'Not Set',
     'change_password' => 'Change Password',
+    'none' => 'None',
     
     //error
     'error' => 'Error',
@@ -23,4 +24,5 @@ return [
 	'error_http403' => 'Permission denied',
 	'error_http404' => 'Page not found',
 	'error_http500' => 'Server or network error, please try again later',
+    'error_permission_denied' => 'Permission denied',
 ];

@@ -1,6 +1,11 @@
 <?php
 return [
     'id' => '编号',
+    'name' => '名称',
+    'phone' => '电话号码',
+    'mobile' => '手机号码',
+    'email' => '电子邮箱',
+    'address' => '地址',
     'add_time' => '创建时间',
     'edit_time' => '更新时间',
     'status' => '状态',

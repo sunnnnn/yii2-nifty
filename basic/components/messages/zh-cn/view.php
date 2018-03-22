@@ -17,6 +17,7 @@ return [
     'confirm_delete_tip' => '你可能将无法恢复这些数据',
     'confirm_delete' => '删除',
     'confirm_cancel' => '取消',
+    'view_detail' => '查看详情',
     
     //role
     'role_unassigned_permissions' => '未分配权限',

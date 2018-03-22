@@ -16,6 +16,7 @@ return [
     'profile' => '个人资料',
     'not_set' => '未设置',
     'change_password' => '修改密码',
+    'none' => '无',
     
     //error
     'error' => '错误',
@@ -23,4 +24,5 @@ return [
     'error_http403' => '您没有操作权限',
     'error_http404' => '请求页面未找到',
 	'error_http500' => '服务器或者网络错误，请稍后重试',
+    'error_permission_denied' => '权限不足',
 ];

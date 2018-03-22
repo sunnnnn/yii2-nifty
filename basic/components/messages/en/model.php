@@ -1,6 +1,11 @@
 <?php
 return [
     'id' => 'ID',
+    'name' => 'Name',
+    'phone' => 'Telephone',
+    'mobile' => 'Mobile Number',
+    'email' => 'Email Address',
+    'address' => 'Address',
     'add_time' => 'Create Time',
     'edit_time' => 'Update Time',
     'status' => 'Status',

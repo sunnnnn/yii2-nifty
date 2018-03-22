@@ -17,6 +17,7 @@ return [
     'confirm_delete_tip' => 'You may not be able to recover this data',
     'confirm_delete' => 'Remove',
     'confirm_cancel' => 'Cancel',
+    'view_detail' => 'View Detail',
      
     //role
     'role_unassigned_permissions' => 'Unassigned Permissions',
