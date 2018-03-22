@@ -21,7 +21,9 @@ $profilePhotos = Admin::getProfilePhotos();
     		</div>
         </div>
         <h4 class="mar-no text-main"><?= empty($model->username) ? '-' : $model->username; ?></h4>
-        <p class="text-muted mar-no"><?= empty($model->roles->name) ? '-' : Yii::t('app/menu', $model->roles->name); ?></p>
+        <p class="text-muted" style="margin-top: 10px;">
+        	<?= empty($model->roles->name) ? '' : '<label class="label label-mint">'.Yii::t('app/menu', $model->roles->name).'</label>'; ?>
+        </p>
     </div>
     
     <div class="profile-append">

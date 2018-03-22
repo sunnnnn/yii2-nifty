@@ -42,10 +42,10 @@ $this->title = Yii::t('app/menu', 'administrator');
                     <div class="media-left">
                         <img alt="Profile Picture" class="img-md img-circle" src="<?= empty($model->photo) ? Admin::getProfilePhotos(true) : $model->photo; ?>">
                     </div>
-                    <div class="media-body pad-top">
+                    <div class="media-body" style="padding-top: 10px;">
                         <div class="box-inline">
                             <span class="text-lg text-semibold text-main"><?= isset($model->username) ? $model->username : '-'; ?></span>
-                            <p class="text-sm"><?= isset($model->roles->name) ? Yii::t('app/menu', $model->roles->name) : '-'; ?></p>
+                            <p class="text-sm" style="margin-top: 5px;"><?= isset($model->roles->name) ? Yii::t('app/menu', $model->roles->name) : '-'; ?></p>
                         </div>
                     </div>
                 </div>
