@@ -6,7 +6,7 @@ use yii\helpers\ArrayHelper;
 use app\models\Admin;
 
 $this->title = empty($model->id) ? Yii::t('app/view', 'create') : Yii::t('app/view', 'edit');
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app/menu', 'admin'), 'url' => Url::to(['/admin/index'])];
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app/menu', 'administrator'), 'url' => Url::to(['/admin/index'])];
 $this->params['breadcrumbs'][] = $this->title;
 
 $profilePhotos = Admin::getProfilePhotos();

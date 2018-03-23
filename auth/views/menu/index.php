@@ -13,7 +13,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="pad-btm form-inline">
             <div class="row">
             	<div class="col-md-6 col-md-offset-6 table-toolbar-right">
-                	<?= Html::a('<i class="pli-add""></i> '.Yii::t('app/view', 'add'), ['/auth/menu/add'], ['class' => 'btn btn-purple']) ?>
+                	<?= Html::a('<i class="pli-add""></i> '.Yii::t('app/view', 'create'), ['/auth/menu/add'], ['class' => 'btn btn-purple']) ?>
                 </div>
             
             </div>
