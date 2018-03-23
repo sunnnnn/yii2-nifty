@@ -1,13 +1,12 @@
 <?php
 return [
-    'view_list' => '列表查询',
-    'form_data' => '表单数据',
     'search' => '搜索',
     'type_for_search' => '输入关键词搜索',
     'actions' => '操作',
     'add' => '添加',
     'create' => '新增',
     'edit' => '编辑',
+    'view' => '查看',
     'remove' => '删除',
     'delete' => '删除',
     'submit' => '提交',
@@ -17,6 +16,7 @@ return [
     'confirm_delete_tip' => '你可能将无法恢复这些数据',
     'confirm_delete' => '删除',
     'confirm_cancel' => '取消',
+    'view_list' => '列表查询',
     'view_detail' => '查看详情',
     
     //role

@@ -1,13 +1,12 @@
 <?php
 return [
-    'view_list' => 'View List',
-    'form_data' => 'Form Data',
     'search' => 'Search',
     'type_for_search' => 'Type for search',
     'actions' => 'Actions',
     'add' => 'Add',
     'create' => 'Create',
     'edit' => 'Edit',
+    'view' => 'View',
     'remove' => 'Remove',
     'delete' => 'Delete',
     'submit' => 'Submit',
@@ -17,6 +16,7 @@ return [
     'confirm_delete_tip' => 'You may not be able to recover this data',
     'confirm_delete' => 'Remove',
     'confirm_cancel' => 'Cancel',
+    'view_list' => 'View List',
     'view_detail' => 'View Detail',
      
     //role
