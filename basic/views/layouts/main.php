@@ -46,6 +46,10 @@ app\assets\AdminAsset::register($this);
         </div>
         
         <?= $this->render('footer.php'); ?>
+        
+        <button class="scroll-top btn">
+            <i class="pci-chevron chevron-up"></i>
+        </button>
     </div>
 
     <?php $this->endBody() ?>
