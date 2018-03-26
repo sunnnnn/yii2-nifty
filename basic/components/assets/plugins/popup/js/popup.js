@@ -142,6 +142,54 @@ if (typeof $ === 'function') {
         		$("#showMessageTemplate").fadeOut("fast");
         	}
         }
+        
+        window.showNoty = function(message, duration, type){
+        	if ($("#showLoadingTemplate").length) {
+        		$("#showLoadingTemplate").fadeOut("fast");
+        	}
+        	
+        	message = typeof message == 'undefined' ? 'Message' : message;
+        	duration = typeof duration == 'undefined' ? 5000 : duration;
+        	type = typeof type == 'undefined' ? 'info' : type;
+        	// type: primary || info || success || warning || danger || mint || purple || pink ||  dark
+        	$.niftyNoty({
+                type: type,
+                container: 'floating',
+                message: '<label class="text-semibold">'+ message +'</label>',
+                closeBtn: false,
+                floating: {
+                    position: "top-right",
+                    animationIn: 'fadeInRight',
+                    animationOut: 'fadeOutRight'
+                },
+                timer: duration,
+            });
+        }
+        
+        
+        window.showInfo = function(message, duration){
+        	showNoty(message, duration, 'info');
+        }
+        
+        window.showSuccess = function(message, duration){
+        	showNoty(message, duration, 'success');
+        }
+        
+        window.showError = function(message, duration){
+        	showNoty(message, duration, 'danger');
+        }
+        
+        window.showWarning = function(message, duration){
+        	showNoty(message, duration, 'warning');
+        }
+        
+        window.showDanger = function(message, duration){
+        	showNoty(message, duration, 'danger');
+        }
+        
+        window.showMint = function(message, duration){
+        	showNoty(message, duration, 'mint');
+        }
 
     });
 }

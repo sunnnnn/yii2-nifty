@@ -11,18 +11,18 @@ $(function(){
 	        error: function(xhr) {
 	        	hideLoading();
 				if(xhr.status == '403'){
-					showMessage(_message.errorHttp403);
+					showError(_message.errorHttp403);
 				}else if(xhr.status == '404'){
-					showMessage(_message.errorHttp404);
+					showError(_message.errorHttp404);
 				}else{
-					showMessage(_message.errorHttp500);
+					showError(_message.errorHttp500);
 				}
 	        },
 	        success: function(result) {
 	        	hideLoading();
 		        if(result.result){
 					if(result.result === true || result.result == 1){
-						showMessage(result.message);
+						showError(result.message);
 					}
 					if(result.result == '@'){
 						history.back();
@@ -30,7 +30,7 @@ $(function(){
 			        	location.href = result.result;
 					}
 		        }else{
-		        	showMessage(result.message);
+		        	showError(result.message);
 		        }
 	        }
 	    });
@@ -52,17 +52,17 @@ $(function(){
     					if(result.result){
     						father.fadeOut('slow');
     					}else{
-    						showMessage(result.message);
+    						showError(result.message);
     					}  
     				},  
     				error: function(xhr) {
     					hideLoading();
     					if(xhr.status == '403'){
-    						showMessage(_message.errorHttp403);
+    						showError(_message.errorHttp403);
     					}else if(xhr.status == '404'){
-    						showMessage(_message.errorHttp404);
+    						showError(_message.errorHttp404);
     					}else{
-    						showMessage(_message.errorHttp500);
+    						showError(_message.errorHttp500);
     					}
     				}  
     			});
@@ -99,17 +99,17 @@ $(function(){
 				if (result.result) {
 					ajax_file_success(result);
 				}else{
-					showMessage(result.message);
+					showError(result.message);
 				}  
 			},  
 			error: function(xhr) {
 				hideLoading();
 				if(xhr.status == '403'){
-					showMessage(_message.errorHttp403);
+					showError(_message.errorHttp403);
 				}else if(xhr.status == '404'){
-					showMessage(_message.errorHttp404);
+					showError(_message.errorHttp404);
 				}else{
-					showMessage(_message.errorHttp500);
+					showError(_message.errorHttp500);
 				}
 			}  
 		});

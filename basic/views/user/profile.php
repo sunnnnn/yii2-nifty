@@ -77,11 +77,11 @@ $(function(){
     	        error: function(xhr) {
     	        	hideLoading();
     				if(xhr.status == '403'){
-    					showMessage(_message.errorHttp403);
+    					showError(_message.errorHttp403);
     				}else if(xhr.status == '404'){
-    					showMessage(_message.errorHttp404);
+    					showError(_message.errorHttp404);
     				}else{
-    					showMessage(_message.errorHttp500);
+    					showError(_message.errorHttp500);
     				}
     	        },
     	        success: function(result) {
@@ -90,7 +90,7 @@ $(function(){
     					$('.profile-photo').attr('src', src);
 						$('.profile-photos').fadeOut();
     		        }else{
-    		        	showMessage(result.message);
+    		        	showError(result.message);
     		        }
     	        }
     	    });

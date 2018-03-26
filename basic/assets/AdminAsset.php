@@ -10,6 +10,7 @@ class AdminAsset extends AssetBundle{
         'css/nifty.min.css',
         'plugins/pace/pace.min.css',
         'plugins/popup/css/popup.css',
+        'plugins/animate-css/animate.min.css',
         'css/open-sans.css', //https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700
         'css/admin.css',
     ];

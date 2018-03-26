@@ -50,3 +50,13 @@
 .table > tbody > tr > td{
 	vertical-align: middle;
 }
+
+
+.file-footer-buttons .btn,
+.kv-zoom-actions .btn{
+	padding: 0 !important;
+}
+
+.file-zoom-fullscreen .modal-dialog{
+	left: 0 !important;
+}
