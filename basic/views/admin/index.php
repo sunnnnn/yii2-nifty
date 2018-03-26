@@ -20,7 +20,13 @@ $this->title = Yii::t('app/menu', 'administrator');
 				<?= Html::activeTextInput($searchModel, 'keywords', ['class' => 'form-control', 'placeholder' => Yii::t('app/view', 'type_for_search')]); ?>
 			</div>
 			<div class="form-group">
-				<?= Html::activeDropDownList($searchModel, 'role', ArrayHelper::map($optionsRole, 'id', 'name'), ['prompt' => Yii::t('app/view', 'all_roles'), 'class' => 'form-control']); ?>
+				<?= \components\widgets\select\BsSelect::widget([
+				    'model' => $searchModel,
+				    'attribute' => 'role',
+				    '_data' => ArrayHelper::map($optionsRole, 'id', 'name'),
+				    '_search' => false,
+				    'options' => ['prompt' => Yii::t('app/view', 'all_roles'), 'class' => 'form-control']
+				]); ?>
 			</div>
 			<?= Html::submitButton('<i class="pli-magnifi-glass"></i> '.Yii::t('app/view', 'search'), ['class' => 'btn btn-default']); ?>
 	    <?php ActiveForm::end(); ?>

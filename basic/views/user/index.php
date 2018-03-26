@@ -19,7 +19,13 @@ $this->title = Yii::t('app/menu', 'user');
 				<?= Html::activeTextInput($searchModel, 'keywords', ['class' => 'form-control', 'placeholder' => Yii::t('app/view', 'type_for_search')]); ?>
 			</div>
 			<div class="form-group">
-				<?= Html::activeDropDownList($searchModel, 'status', Admin::getStatusArr(), ['class' => 'form-control']); ?>
+				<?= \components\widgets\select\BsSelect::widget([
+				    'model' => $searchModel,
+				    'attribute' => 'status',
+				    '_data' => Admin::getStatusArr(),
+				    '_search' => false,
+				    'options' => ['class' => 'form-control']
+				]); ?>
 			</div>
 			<?= Html::submitButton('<i class="pli-magnifi-glass"></i> '.Yii::t('app/view', 'search'), ['class' => 'btn btn-default']); ?>
 	    <?php ActiveForm::end(); ?>
