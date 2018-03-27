@@ -31,7 +31,7 @@ app\assets\AdminAsset::register($this);
 			'success': '<?= Yii::t('app', 'success'); ?>',
     	};
     </script>
-    <body class="hold-transition skin-blue sidebar-mini">
+    <body>
     <?php $this->beginBody() ?>
     <div id="container" class="effect aside-float aside-bright mainnav-lg navbar-fixed mainnav-fixed">
 

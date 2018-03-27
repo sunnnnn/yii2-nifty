@@ -2,7 +2,7 @@
 use yii\helpers\Url;
 use yii\helpers\Html;
 ?>
-<header id="navbar">
+<header id="navbar" style="z-index:3999;">
     <div id="navbar-container" class="boxed">
         <!--Brand logo & name-->
         <!--================================-->
