@@ -5,7 +5,7 @@ use yii\web\AssetBundle;
 
 class IconsAsset extends AssetBundle{
 	
-    public $sourcePath = '@components/assets/plugins';
+    public $sourcePath = '@components/assets/plugins/icons';
     public $css = [
         /*
         'fa/css/font-awesome.min.css',
