@@ -92,7 +92,7 @@ class BsSelect extends InputWidget{
     
     public function run(){
         parent::run();
-        if(in_array($this->_language, ['zh', 'zh-cn'])){
+        if(in_array($this->_language, ['zh', 'zh-cn', 'zh-CN', 'zh-tw', 'zh-TW'])){
             $this->_textSelectAll = '全选';
             $this->_textDeselectAll = '清除';
             $this->_textNoneSelected = '未选择';

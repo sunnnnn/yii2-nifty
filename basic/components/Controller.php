@@ -6,7 +6,7 @@ use yii\web\Response;
 use yii\helpers\ArrayHelper;
 
 class Controller extends \yii\web\Controller{
-    public $language = ['en', 'zh-cn'];
+    public $language = ['en', 'zh-CN'];
 	
 	public function init(){
 		parent::init();

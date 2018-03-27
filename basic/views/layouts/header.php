@@ -63,7 +63,7 @@ use yii\helpers\Html;
                     <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right panel-default">
                         <ul class="head-list">
                             <li>
-                                <a href="<?= Url::to(['/site/language', 'lang' => 'zh-cn'])?>"><i class="pli-china icon-lg icon-fw"></i> 简体中文</a>
+                                <a href="<?= Url::to(['/site/language', 'lang' => 'zh-CN'])?>"><i class="pli-china icon-lg icon-fw"></i> 简体中文</a>
                             </li>
                             <li>
                                 <a href="<?= Url::to(['/site/language', 'lang' => 'en'])?>"><i class="pli-united-kingdom icon-lg icon-fw"></i> English</a>
