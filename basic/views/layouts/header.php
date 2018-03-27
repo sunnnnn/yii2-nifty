@@ -25,7 +25,7 @@ use yii\helpers\Html;
 
                 <!--Navigation toogle button-->
                 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                <li class="tgl-menu-btn">
+                <li class="tgl-menu-btn" style="top:0;">
                     <a class="mainnav-toggle" href="#">
                         <i class="pli-list-view"></i>
                     </a>
