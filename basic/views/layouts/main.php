@@ -32,6 +32,7 @@ app\assets\AdminAsset::register($this);
     	};
     </script>
     <body>
+    <div class="loading-screen"></div>
     <?php $this->beginBody() ?>
     <div id="container" class="effect aside-float aside-bright mainnav-lg navbar-fixed mainnav-fixed">
 
