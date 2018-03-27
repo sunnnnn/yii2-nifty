@@ -5,20 +5,20 @@ use yii\web\AssetBundle;
 
 class AdminAsset extends AssetBundle{
 	
-	public $sourcePath = '@components/assets';
+    public $sourcePath = '@components/assets/main';
     public $css = [
         'css/nifty.min.css',
-        'plugins/pace/pace.min.css',
-        'plugins/popup/css/popup.css',
-        'plugins/animate-css/animate.min.css',
+        'css/animate.min.css',
         'css/open-sans.css', //https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700
         'css/admin.css',
+        'pace/pace.min.css',
+        'popup/css/popup.css',
     ];
     public $js = [
-    	'js/nifty.min.js',
-    	'js/admin.js',
-        'plugins/pace/pace.min.js',
-        'plugins/popup/js/popup.js',
+        'js/nifty.min.js',
+        'js/admin.js',
+        'pace/pace.min.js',
+        'popup/js/popup.js',
     ];
     public $depends = [
         'app\assets\AppAsset',
