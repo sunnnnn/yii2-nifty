@@ -89,9 +89,10 @@ class BsSelect extends InputWidget{
      * @var boolean
      */
     public $_optionsMerge = true;
-    
-    public function run(){
-        parent::run();
+
+    public function init(){
+        parent::init();
+
         if(in_array($this->_language, ['zh', 'zh-cn', 'zh-CN', 'zh-tw', 'zh-TW'])){
             $this->_textSelectAll = '全选';
             $this->_textDeselectAll = '清除';
@@ -101,6 +102,10 @@ class BsSelect extends InputWidget{
             $this->_textNoneResults = '没有符合{0}的选项';
             $this->_textDoneButton= '关闭';
         }
+    }
+
+    public function run(){
+        parent::run();
         $this->renderWidget();
     }
     
