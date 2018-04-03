@@ -69,3 +69,7 @@
 .file-zoom-fullscreen .modal-dialog{
 	left: 0 !important;
 }
+
+.panel .two-column.timeline .timeline-entry:nth-child(even) .timeline-label:after{
+	border-left-color: #f3f5f9;
+}
