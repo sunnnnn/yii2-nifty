@@ -32,7 +32,7 @@ $this->title = Yii::t('app/menu', 'administrator');
 	    <?php ActiveForm::end(); ?>
     </div>
     <div class="col-sm-3 toolbar-right">
-        <?= Html::a('<i class="pli-add""></i> '.Yii::t('app/view', 'create'), ['/admin/add'], ['class' => 'btn btn-purple']) ?>
+        <?= Html::a('<i class="fa fa-plus btn-label"></i> '.Yii::t('app/view', 'create'), ['/admin/add'], ['class' => 'btn btn-success btn-labeled']) ?>
     </div>
 </div>
 
@@ -71,11 +71,11 @@ $this->title = Yii::t('app/menu', 'administrator');
 				</div>
                 <div class="text-center pad-to">
                     <div class="btn-group">
-                    	<?= Html::a('<i class="pli-pen"></i> '.Yii::t('app/view', 'edit'), ['/admin/edit', 'id' => $model->id], [
+                    	<?= Html::a('<i class="fa fa-pencil"></i> '.Yii::t('app/view', 'edit'), ['/admin/edit', 'id' => $model->id], [
 							"class" => "btn btn-sm btn-default"
 						]); ?>
-						<?= Html::a('<i class="pli-remove"></i> '.Yii::t('app/view', 'remove'), 'javascript:;', [
-							'class' => 'btn btn-sm btn-default ajax-admin-delete',
+						<?= Html::a('<i class="fa fa-trash-o"></i> '.Yii::t('app/view', 'remove'), 'javascript:;', [
+							'class' => 'btn btn-sm btn-default btn-hover-danger ajax-admin-delete',
 						    'data-key' => $model->id,
 						    'data-action' => Url::to(['/admin/delete'])
 						]); ?>

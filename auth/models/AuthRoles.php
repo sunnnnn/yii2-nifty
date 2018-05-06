@@ -67,7 +67,7 @@ class AuthRoles extends \yii\db\ActiveRecord
     	        'defaultOrder' => $order
     	    ],
     		'pagination' => [
-    			'pagesize' => 10,
+    			'pagesize' => 20,
     		],
     	]);
     

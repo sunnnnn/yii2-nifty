@@ -51,8 +51,8 @@ Modal::end();
 					<h3 class="box-title"><?= '<?= ' ?> Html::encode($this->title) ?></h3>
 					
 					<div class="box-tools">
-						<?= '<?= ' ?> Html::a('<i class="fa fa-plus"></i> 添加', 'javascript:;', [
-						    'class' => 'btn btn-success btn-add-modal', 
+						<?= '<?= ' ?> Html::a('<i class="fa fa-plus btn-label"></i> 添加', 'javascript:;', [
+						    'class' => 'btn btn-success btn-labeled btn-add-modal',
 						    'data-action' => Url::to(['/<?= Inflector::camel2words(StringHelper::basename($generator->modelClass), false) ?>/add'])
 						]) ?>
 					</div>
@@ -108,7 +108,7 @@ Modal::end();
 								"buttons" => [
 									"delete" => function($url, $model, $key){
 										return Html::a('<i class="fa fa-trash-o"></i> 删除', 'javascript:;', [
-											'class' => 'btn btn-sm btn-danger ajax-table-delete',
+											'class' => 'btn btn-sm btn-default btn-hover-danger ajax-table-delete',
 											'data-action' => Url::to(['/<?= Inflector::camel2id(StringHelper::basename($generator->modelClass), false) ?>/delete'])
 										]);
 									}

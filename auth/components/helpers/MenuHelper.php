@@ -76,8 +76,8 @@ class MenuHelper{
 						'{label}' => $val['label'], 
 						'{icon}' => $val['icon'], 
 						'{items}' => self::renderMenuItmes($val['items']),
-						'{edit}' => '<button class="btn btn-sm btn-default btn-edit" data-href="'. Url::to(['/auth/menu/edit', 'id' => $val['id']]) .'"><i class="pli-pen"></i> '.Yii::t('app/view', 'edit').'</button>',
-						'{delete}' => '<button class="btn btn-sm btn-default btn-delete" data-key="'. $val['id'] .'"><i class="pli-remove"></i> '.Yii::t('app/view', 'remove').'</button>',
+						'{edit}' => '<button class="btn btn-sm btn-default btn-edit" data-href="'. Url::to(['/auth/menu/edit', 'id' => $val['id']]) .'"><i class="fa fa-pencil"></i> '.Yii::t('app/view', 'edit').'</button>',
+						'{delete}' => '<button class="btn btn-sm btn-default btn-hover-danger btn-delete" data-key="'. $val['id'] .'"><i class="fa fa-trash-o"></i> '.Yii::t('app/view', 'remove').'</button>',
 					];
 					$result .= strtr($tmp, $replace);
 				}elseif(!empty($val['url'])){
@@ -85,8 +85,8 @@ class MenuHelper{
 					$replace = [
 						'{label}' => $val['label'],
 						'{icon}' => $val['icon'],
-						'{edit}' => '<button class="btn btn-sm btn-default btn-edit" data-href="'. Url::to(['/auth/menu/edit', 'id' => $val['id']]) .'"><i class="pli-pen"></i> '.Yii::t('app/view', 'edit').'</button>',
-						'{delete}' => '<button class="btn btn-sm btn-default btn-delete" data-key="'. $val['id'] .'"><i class="pli-remove"></i> '.Yii::t('app/view', 'remove').'</button>',
+						'{edit}' => '<button class="btn btn-sm btn-default btn-edit" data-href="'. Url::to(['/auth/menu/edit', 'id' => $val['id']]) .'"><i class="fa fa-pencil"></i> '.Yii::t('app/view', 'edit').'</button>',
+						'{delete}' => '<button class="btn btn-sm btn-default btn-hover-danger btn-delete" data-key="'. $val['id'] .'"><i class="fa fa-trash-o"></i> '.Yii::t('app/view', 'remove').'</button>',
 					];
 					$result .= strtr($tmp, $replace);
 				}

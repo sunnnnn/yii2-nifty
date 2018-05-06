@@ -130,7 +130,7 @@ class <?= $className ?> extends <?= '\\' . ltrim($generator->baseClass, '\\') . 
 		        'defaultOrder' => $order
 		     ],
 			'pagination' => [
-				'pagesize' => 10,
+				'pagesize' => 20,
 			],
 		]);
 	

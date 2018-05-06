@@ -31,7 +31,7 @@ $this->title = Yii::t('app/menu', 'user');
 	    <?php ActiveForm::end(); ?>
     </div>
     <div class="col-sm-3 toolbar-right">
-        <?= Html::a('<i class="pli-add""></i> '.Yii::t('app/view', 'create'), ['/user/add'], ['class' => 'btn btn-purple']) ?>
+        <?= Html::a('<i class="fa fa-plus btn-labeled"></i> '.Yii::t('app/view', 'create'), ['/user/add'], ['class' => 'btn btn-success btn-labeled']) ?>
     </div>
 </div>
 
@@ -41,7 +41,7 @@ $this->title = Yii::t('app/menu', 'user');
         <div class="panel pos-rel">
         	<div class="widget-control text-right">
         		<label class="label label-<?= $model->status == Admin::STATUS_N ? 'success' : 'danger'; ?>"><?= Admin::getStatusArr($model->status); ?></label>
-        		<?= Html::a('<i class="pli-pen"></i>', ['/user/edit', 'id' => $model->id], [
+        		<?= Html::a('<i class="fa fa-pencil"></i>', ['/user/edit', 'id' => $model->id], [
 					"class" => "btn btn-sm btn-default"
 				]); ?>
             </div>

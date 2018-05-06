@@ -16,6 +16,10 @@
 .btn i{
 	padding-bottom: 2px;
 }
+.btn i.fa-edit{
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
 
 .pad-top-5{
 	padding-top: 5px;
@@ -25,7 +29,7 @@
 }
 
 
-.profile .profile-photo, 
+.profile .profile-photo,
 .img-profile-photo{
 	cursor: pointer;
 }
@@ -43,15 +47,15 @@
 }
 
 .profile{
-	
+
 }
 .profile .widget-img{
 	position: absolute;
-    width: 96px;
-    height: 96px;
-    left: 50%;
-    margin-left: -48px;
-    top: -48px;
+	width: 96px;
+	height: 96px;
+	left: 50%;
+	margin-left: -48px;
+	top: -48px;
 }
 .profile .widget-body{
 	padding: 60px 15px 15px;
@@ -72,4 +76,8 @@
 
 .panel .two-column.timeline .timeline-entry:nth-child(even) .timeline-label:after{
 	border-left-color: #f3f5f9;
+}
+
+#container #aside-container{
+	z-index: 998;
 }

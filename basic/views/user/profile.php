@@ -29,7 +29,7 @@ $profilePhotos = Admin::getProfilePhotos();
     <div class="profile-append">
         <div class="panel-body">
             <div class="text-right">
-                <button class="btn btn-sm btn-default profile-edit"><i class="pli-pen"></i> <?= Yii::t('app/view', 'edit'); ?></button>
+                <button class="btn btn-sm btn-default profile-edit"><i class="fa fa-pencil"></i> <?= Yii::t('app/view', 'edit'); ?></button>
             </div>
         	<hr>
         	<div class="row pad-top">

@@ -107,7 +107,7 @@ class Admin extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
     	$dataProvider = new ActiveDataProvider([
 			'query' => $query,
 			'pagination' => [
-    			'pagesize' => 10,
+    			'pagesize' => 20,
 			],
 		]);
     

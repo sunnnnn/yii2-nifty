@@ -8,10 +8,6 @@ $this->title = Yii::t('app/menu', 'role');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="panel">
-    <div class="panel-heading">
-        <h3 class="panel-title"><?= Yii::t('app/view', 'view_list'); ?></h3>
-    </div>
-
     <div class="panel-body">
         <div class="pad-btm form-inline">
             <div class="row">
@@ -30,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
                 
                 <div class="col-sm-3 table-toolbar-right">
-                	<?= Html::a('<i class="pli-add""></i> '.Yii::t('app/view', 'create'), ['/auth/role/add'], ['class' => 'btn btn-purple']) ?>
+                	<?= Html::a('<i class="fa fa-plus btn-label"></i> '.Yii::t('app/view', 'create'), ['/auth/role/add'], ['class' => 'btn btn-success btn-labeled']) ?>
                 </div>
             </div>
         </div>
@@ -64,13 +60,13 @@ $this->params['breadcrumbs'][] = $this->title;
 						"header" => Yii::t('app/view', 'actions'),
 						"buttons" => [
 							"update" => function ($url, $model, $key){
-							    return Html::a('<i class="pli-pen"></i> '.Yii::t('app/view', 'edit'), ['/auth/role/edit', 'id' => $model->id], [
+							    return Html::a('<i class="fa fa-pencil"></i> '.Yii::t('app/view', 'edit'), ['/auth/role/edit', 'id' => $model->id], [
 									"class" => "btn btn-sm btn-default"
 								]);
 							},
 							"delete" => function($url, $model, $key){
-							    return Html::a('<i class="pli-remove"></i> '.Yii::t('app/view', 'remove'), 'javascript:;', [
-									'class' => 'btn btn-sm btn-default ajax-table-delete',
+							    return Html::a('<i class="fa fa-trash-o"></i> '.Yii::t('app/view', 'remove'), 'javascript:;', [
+									'class' => 'btn btn-sm btn-default btn-hover-danger ajax-table-delete',
 								    'data-action' => Url::to(['/auth/role/delete'])
 								]);
 							}
