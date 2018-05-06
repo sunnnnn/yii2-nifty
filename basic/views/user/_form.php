@@ -43,7 +43,7 @@ use app\models\AdminInfo;
         	</div>
         
         	<div class="panel-footer">
-        		<?= Html::button(Yii::t('app/view', 'submit'), ['class' => 'btn btn-mint profile-form-submit']); ?>
+        		<?= Html::button(Yii::t('app/view', 'submit'), ['class' => 'btn btn-primary profile-form-submit']); ?>
         	</div>
         <?php ActiveForm::end(); ?>
 	</div>

@@ -60,7 +60,7 @@ $profilePhotos = Admin::getProfilePhotos();
                     ]); ?>
 				</div>
 				<div class="panel-footer">
-					<?= Html::button(Yii::t('app/view', 'submit'), ['class' => 'btn btn-mint ajax-form-submit']); ?>
+					<?= Html::button(Yii::t('app/view', 'submit'), ['class' => 'btn btn-primary ajax-form-submit']); ?>
 					<?= Html::a('<i class="pli-left-4"></i> '.Yii::t('app/view', 'back'), 'javascript:history.back();', ['class' => 'btn btn-default']); ?>
 				</div>
 				
