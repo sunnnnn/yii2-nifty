@@ -19,6 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
     </div>
+    <div class="row">
 		<div class="col-md-8 col-md-offset-1">
             <?php $form = ActiveForm::begin([
         		'action' => null,
