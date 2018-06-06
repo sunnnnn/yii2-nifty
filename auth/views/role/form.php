@@ -11,11 +11,15 @@ $this->params['breadcrumbs'][] = ['label' => Yii::t('app/menu', 'role'), 'url' =
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="panel">
-	<div class="panel-heading">
-        <h3 class="panel-title"><?= Html::a('<i class="pli-left-4"></i> '.Yii::t('app/view', 'back'), 'javascript:history.back();', ['class' => 'btn btn-default']); ?></h3>
+    <div class="panel-heading">
+        <div class="pad-all form-inline">
+            <div class="table-toolbar-left">
+                <?= Html::a('<i class="fa fa-chevron-left btn-labeled"></i> '.Yii::t('app/view', 'back'), 'javascript:history.back();', ['class' => 'btn btn-default btn-label']); ?>
+            </div>
+        </div>
     </div>
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
+		<div class="col-md-10 col-md-offset-1">
             <?php $form = ActiveForm::begin([
                 'id' => 'route-form',
         		'action' => null,
@@ -59,7 +63,7 @@ $this->params['breadcrumbs'][] = $this->title;
 				
 				<div class="panel-footer">
 					<?= Html::button(Yii::t('app/view', 'submit'), ['class' => 'btn btn-primary route-form-submit']); ?>
-					<?= Html::a('<i class="pli-left-4"></i> '.Yii::t('app/view', 'back'), 'javascript:history.back();', ['class' => 'btn btn-default']); ?>
+					<?= Html::a(Yii::t('app/view', 'back'), 'javascript:history.back();', ['class' => 'btn btn-default']); ?>
 				</div>
 				
 			<?php ActiveForm::end(); ?>
