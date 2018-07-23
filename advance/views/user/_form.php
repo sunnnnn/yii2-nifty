@@ -2,7 +2,7 @@
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\ActiveForm;
-use app\models\AdminInfo;
+use backend\models\AdminInfo;
 
 ?>
 <div class="row">

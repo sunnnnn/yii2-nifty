@@ -1,6 +1,6 @@
 <?php
 use yii\helpers\Html;
-use app\models\Admin;
+use backend\models\Admin;
 use sunnnnn\nifty\auth\components\helpers\MenuHelper;
 use sunnnnn\nifty\auth\components\widgets\Menu;
 ?>

@@ -1,6 +1,6 @@
 <?php
 use yii\helpers\Html;
-app\assets\AdminAsset::register($this);
+backend\assets\AdminAsset::register($this);
 /* @var $this \yii\web\View */
 /* @var $content string */
 

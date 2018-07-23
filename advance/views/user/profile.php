@@ -1,8 +1,8 @@
 <?php
 use yii\helpers\Html;
 use yii\helpers\Url;
-use app\models\Admin;
-use app\models\AdminInfo;
+use backend\models\Admin;
+use backend\models\AdminInfo;
 
 $this->title = Yii::t('app/menu', 'profile');
 $profilePhotos = Admin::getProfilePhotos();

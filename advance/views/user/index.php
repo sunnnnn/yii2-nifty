@@ -2,7 +2,7 @@
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\ActiveForm;
-use app\models\Admin;
+use backend\models\Admin;
 
 $this->title = Yii::t('app/menu', 'user');
 //$this->params['breadcrumbs'][] = $this->title;
