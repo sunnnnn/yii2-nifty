@@ -37,7 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="table-responsive">
 			<?= GridView::widget([
                 'layout' => "{items}\n{summary}\n{pager}",
-				'tableOptions' => ['class' => 'table table-hover', 'style' => 'width:630px;'],
+				'tableOptions' => ['class' => 'table table-hover', 'style' => 'min-width:630px;'],
 				'dataProvider' => $dataProvider,
 				'columns' => [
 					[
