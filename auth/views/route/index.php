@@ -20,13 +20,17 @@ $this->params['breadcrumbs'][] = $this->title;
         				'enableClientValidation' => false,
         			]); ?>
         				<div class="form-group">
-        					<?= Html::activeTextInput($searchModel, 'keywords', ['class' => 'form-control', 'placeholder' => Yii::t('app/view', 'type_for_search')]); ?>
+                            <div class="input-group">
+        					    <?= Html::activeTextInput($searchModel, 'keywords', ['class' => 'form-control', 'placeholder' => Yii::t('app/view', 'type_for_search')]); ?>
+                                <div class="input-group-btn">
+    					            <?= Html::submitButton('<i class="pli-magnifi-glass"></i> '.Yii::t('app/view', 'search'), ['class' => 'btn btn-default']); ?>
+                                </div>
+                            </div>
         				</div>
-    					<?= Html::submitButton('<i class="pli-magnifi-glass"></i> '.Yii::t('app/view', 'search'), ['class' => 'btn btn-default']); ?>
         		    <?php ActiveForm::end(); ?>
                 </div>
                 
-                <div class="col-sm-3 table-toolbar-right">
+                <div class="col-sm-3 text-right">
                 	<?= Html::a('<i class="fa fa-plus btn-label"></i> '.Yii::t('app/view', 'create'), ['/auth/route/add'], ['class' => 'btn btn-success btn-labeled']) ?>
                 </div>
             </div>
@@ -34,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="table-responsive">
 			<?= GridView::widget([
                 'layout' => "{items}\n{summary}\n{pager}",
-				'tableOptions' => ['class' => 'table table-hover'],
+				'tableOptions' => ['class' => 'table table-hover', 'style' => 'width:630px;'],
 				'dataProvider' => $dataProvider,
 				'columns' => [
 					[
@@ -47,13 +51,11 @@ $this->params['breadcrumbs'][] = $this->title;
 						"headerOptions" => ["width" => "35%"],
 					],
 					[
-						"attribute" => "name",
-						"headerOptions" => ["width" => "35%"],
+						"attribute" => "name"
 					],
 					[
 						'class' => 'yii\grid\ActionColumn',
-					    "headerOptions" => ["style" => "text-align:center"],
-					    "contentOptions" => ["style" => "text-align:right"],
+					    "headerOptions" => ["width" => "160px"],
 						"template" => "{update} {delete}",
 						"header" => Yii::t('app/view', 'actions'),
 						"buttons" => [

@@ -14,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="panel">
     <div class="panel-heading">
         <div class="pad-all form-inline">
-            <div class="table-toolbar-left">
+            <div class="pull-left">
                 <?= Html::a('<i class="fa fa-chevron-left btn-labeled"></i> '.Yii::t('app/view', 'back'), 'javascript:history.back();', ['class' => 'btn btn-default btn-label']); ?>
             </div>
         </div>

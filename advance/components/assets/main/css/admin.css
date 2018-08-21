@@ -10,7 +10,7 @@
 }
 
 .search-inline input[type=text]{
-	padding-bottom: 1px;
+	/*padding-bottom: 1px; */
 }
 
 .btn i{
@@ -102,5 +102,20 @@
 }
 
 .table-responsive{
+	border: 0 !important;
+}
+
+.search-inline .input-group{
+	border: 1px solid #eee;
+	border-radius: 3px;
+}
+.search-inline .input-group .input-group-btn .btn{
+	border: 0 !important;
+	padding: 7px 12px;
+}
+.search-inline .input-group .input-group-btn .bootstrap-select>.dropdown-toggle{
+	padding-right: 25px;
+}
+.search-inline .input-group .form-control{
 	border: 0 !important;
 }

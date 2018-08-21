@@ -10,13 +10,8 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="panel">
     <div class="panel-body">
-        <div class="pad-btm form-inline">
-            <div class="row">
-            	<div class="col-md-6 col-md-offset-6 table-toolbar-right">
-                	<?= Html::a('<i class="fa fa-plus btn-label"></i> '.Yii::t('app/view', 'create'), ['/auth/menu/add'], ['class' => 'btn btn-success btn-labeled']) ?>
-                </div>
-            
-            </div>
+        <div class="pad-btm text-right">
+            <?= Html::a('<i class="fa fa-plus btn-label"></i> '.Yii::t('app/view', 'create'), ['/auth/menu/add'], ['class' => 'btn btn-success btn-labeled']) ?>
         </div>
         
         <div class="table-responsive">
