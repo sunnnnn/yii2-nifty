@@ -6,7 +6,7 @@
 	width: 100%;
 	height: 100%;
 	z-index: 99999;
-	background: url('../img/loading.gif') center no-repeat #264769;
+	background: url('../img/loading.gif') center no-repeat #3a444e;
 }
 
 .search-inline input[type=text]{
@@ -84,11 +84,14 @@
 
 .bootstrap-select .dropdown-menu{
 	z-index: 4001 !important;
-	max-height: 400px  !important;
 }
 
 .bootstrap-select .dropdown-toggle{
 	z-index: 0 !important;
+}
+
+.bootstrap-select ul.inner{
+	max-height: 400px !important;
 }
 
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark{
@@ -96,4 +99,8 @@
 }
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected:first-child a span.check-mark{
 	margin-top: 15px;
+}
+
+.table-responsive{
+	border: 0 !important;
 }

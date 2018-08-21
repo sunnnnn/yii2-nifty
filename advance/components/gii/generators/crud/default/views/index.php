@@ -28,24 +28,28 @@ $this->params['breadcrumbs'][] = $this->title;
         				'enableClientValidation' => false,
         			]); ?>
         				<div class="form-group">
-        					<?= '<?= ' ?>Html::activeTextInput($searchModel, 'keywords', ['class' => 'form-control', 'placeholder' => Yii::t('app/view', 'type_for_search')]); ?>
+                            <div class="input-group">
+                                <?= '<?= ' ?>Html::activeTextInput($searchModel, 'keywords', ['class' => 'form-control', 'placeholder' => Yii::t('app/view', 'type_for_search')]); ?>
+                                <div class="input-group-btn">
+                                    <?= '<?= ' ?>Html::submitButton('<i class="pli-magnifi-glass"></i> '.Yii::t('app/view', 'search'), ['class' => 'btn btn-default']); ?>
+                                </div>
+                            </div>
         				</div>
-    					<?= '<?= ' ?>Html::submitButton('<i class="pli-magnifi-glass"></i> '.Yii::t('app/view', 'search'), ['class' => 'btn btn-default']); ?>
         		    <?= '<?php ' ?>ActiveForm::end(); ?>
 				</div>
-                
-                <div class="col-sm-3 table-toolbar-right">
+
+                <div class="col-sm-3 text-right">
                 	<?= '<?= ' ?>Html::a('<i class="fa fa-plus btn-label"></i> '.Yii::t('app/view', 'create'), ['/<?= Inflector::camel2words(StringHelper::basename($generator->modelClass), false) ?>/add'], ['class' => 'btn btn-success btn-labeled']) ?>
                 </div>
             </div>
         </div>
-        
+
         <div class="table-responsive">
 			<?= '<?= ' ?>GridView::widget([
 				'layout' => "{items}\n{summary}\n{pager}",
-				'tableOptions' => ['class' => 'table table-hover'],
+				'tableOptions' => ['class' => 'table table-hover', 'style' => 'min-width:768px;'],
 				'dataProvider' => $dataProvider,
-				'columns' => [ 
+				'columns' => [
 //					[
 //						'attribute' => '',
 //						'headerOptions' => ['width' => '20%'],
@@ -78,8 +82,7 @@ $this->params['breadcrumbs'][] = $this->title;
 				?>
     				[
 						'class' => 'yii\grid\ActionColumn',
-						"headerOptions" => ["style" => "text-align:center"],
-					    "contentOptions" => ["style" => "text-align:right"],
+						"headerOptions" => ["width" => "180px"],
 						"template" => "{update} {remove}",
 						"header" => Yii::t('app/view', 'actions'),
 						"buttons" => [
