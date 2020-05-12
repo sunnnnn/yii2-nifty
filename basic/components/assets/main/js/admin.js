@@ -45,6 +45,48 @@ $(function(){
         });
     });
 
+    $('body').on('click', '.file-form-submit', function(){
+        var that = $(this);
+        var form = $('.file-form');
+        var formData = new FormData(form[0]);
+        showLoading(_message.loading);
+        $.ajax({
+            type: 'post',
+            url: form.data('action'),
+            data: formData,
+            contentType: false,
+            processData: false,
+            error: function(xhr) {
+                hideLoading();
+                if(xhr.status == '403'){
+                    showError(_message.errorHttp403);
+                }else if(xhr.status == '404'){
+                    showError(_message.errorHttp404);
+                }else{
+                    showError(_message.errorHttp500);
+                }
+            },
+            success: function(result) {
+                hideLoading();
+                if(result.result){
+                    if(result.result === true || result.result == 1){
+                        showInfo(result.message);
+                    }
+                    if(result.result == '@' || result.result == 'back'){
+                        history.back();
+                    }else if(result.result == '#' || result.result == 'reload'){
+                        location.reload();
+                    }else if(result.result.substr(0, 1) == '/'){
+                        location.href = result.result;
+                    }
+                }else{
+                    console.log(result.message);
+                    showError(result.message);
+                }
+            }
+        });
+    });
+
     $('body').on('click', '.ajax-table-delete', function(){
         var that = $(this);
         var father = that.parent().parent();
