@@ -31,6 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
                 
                 <div class="col-sm-3 text-right">
+                	<?= Html::a('<i class="fa fa-plus btn-label"></i> Gii', ['/auth/route/gii'], ['class' => 'btn btn-info btn-labeled']) ?>
                 	<?= Html::a('<i class="fa fa-plus btn-label"></i> '.Yii::t('app/view', 'create'), ['/auth/route/add'], ['class' => 'btn btn-success btn-labeled']) ?>
                 </div>
             </div>
