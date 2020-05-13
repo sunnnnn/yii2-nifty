@@ -1,0 +1,15 @@
+.mce-fullscreen, .tox-fullscreen{
+    z-index: 6000 !important;
+}
+
+.tox-silver-sink{
+    z-index: 6001 !important;
+}
+
+.tox .tox-dialog-wrap{
+    z-index: 6002 !important;
+}
+
+.tox .tox-dialog{
+    z-index: 6003 !important;
+}
