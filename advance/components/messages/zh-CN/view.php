@@ -12,6 +12,7 @@ return [
     'submit' => '提交',
     'back' => '返回',
     'reset' => '重置',
+    'copy' => '复制',
     'confirm_delete_title' => '确认删除',
     'confirm_delete_tip' => '你可能将无法恢复这些数据',
     'confirm_delete' => '删除',

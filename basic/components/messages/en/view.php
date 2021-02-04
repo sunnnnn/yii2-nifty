@@ -12,6 +12,7 @@ return [
     'submit' => 'Submit',
     'back' => 'Back',
     'reset' => 'Reset',
+    'copy' => 'Copy',
     'confirm_delete_title' => 'Confirm to remove',
     'confirm_delete_tip' => 'You may not be able to recover this data',
     'confirm_delete' => 'Remove',

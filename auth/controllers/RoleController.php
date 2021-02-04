@@ -51,6 +51,20 @@ class RoleController extends Controller{
 			'options' => $this->getOptions(),
 		]);
 	}
+
+    public function actionCopy(){
+        $model = AuthRoles::findOne(['id' => $this->getGetValue('id')]);
+        if(empty($model)){
+            throw new NotFoundHttpException(Yii::t('yii', 'Page not found.'));
+        }
+
+        $options = $this->getOptions($model->id);
+        $model->id = 0;
+        return $this->render('form', [
+            'model' => $model,
+            'options' => $options
+        ]);
+    }
 	
 	public function actionEdit(){
 		$model = AuthRoles::findOne(['id' => $this->getGetValue('id')]);

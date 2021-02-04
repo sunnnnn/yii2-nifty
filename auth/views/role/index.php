@@ -57,8 +57,8 @@ $this->params['breadcrumbs'][] = $this->title;
 					],
 					[
 						'class' => 'yii\grid\ActionColumn',
-					    "headerOptions" => ["width" => "160px"],
-						"template" => "{update} {delete}",
+					    "headerOptions" => ["width" => "240px"],
+						"template" => "{update} {delete} {copy}",
 						"header" => Yii::t('app/view', 'actions'),
 						"buttons" => [
 							"update" => function ($url, $model, $key){
@@ -71,7 +71,12 @@ $this->params['breadcrumbs'][] = $this->title;
 									'class' => 'btn btn-sm btn-default btn-hover-danger ajax-table-delete',
 								    'data-action' => Url::to(['/auth/role/delete'])
 								]);
-							}
+							},
+                            "copy" => function ($url, $model, $key){
+                                return Html::a('<i class="fa fa-copy"></i> '.Yii::t('app/view', 'copy'), ['/auth/role/copy', 'id' => $model->id], [
+                                    "class" => "btn btn-sm btn-default"
+                                ]);
+                            }
 						]
 					],
 				],
